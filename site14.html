@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+
+<body>
+
+  <form action="action_page.php" method="post">
+    <div>
+      <label for="fnome">Primeiro nome: </label>
+      <input type="text" id="nome" name="fnome" placeholder="Primeiro nome" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="femail">E-mail: </label>
+      <input type="text" id="email" name="femail" placeholder="fulano@gmail.com" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="fsenha">senha: </label>
+      <input type="password" id="senha" name="fsenha" placeholder="senha" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="ftelefone">telefone: </label>
+      <input type="tel" id="telefone" name="ftelefone" placeholder="(12)3456-7890" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="fdata">Data: </label>
+      <input type="date" id="data" name="fdata" placeholder="dd/mm/aaaaa" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="fnumero">número: </label>
+      <input type="number" id="numero" name="fnumero" placeholder="número" min="0" max="999">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="title">Sexo:</label>
+
+      <label>Homem</label>
+      <input type="radio" name="sexo" value="Homem">
+
+      <label>Mulher</label>
+      <input type="radio" name="sexo" value="Mulher">
+
+      <label>Outro(a)</label>
+      <input type="radio" name="sexo" value="Outro">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="pagamento">Pagamento:</label>
+      <select id="pagamento" name="pagamento">
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="bradesco">bradesco</option>
+      </select>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="inscrever-se">Receber E-mails?</label>
+      <input type="checkbox" id="inscrever-se" name="inscrever-se">
+    </div>
+
+    <br>
+
+    <div>
+      <input type="submit">
+    </div>
+
+    <br>
+
+    <div>
+      <input type="reset">
+    </div>
+
+  </form>
+
+</body>
+
+</html>
