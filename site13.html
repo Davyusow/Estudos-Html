@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botões</title>
+</head>
+
+<body>
+  <a href="https://www.google.com">
+    <button onclick="mudatexto()" style="background-color: aquamarine; border-radius: 5px;">Google</button>
+
+    <p id="texto">Olá!</p>
+
+    <!-- Código java script -->
+    <script> 
+      function mudatexto(){
+        document.getElementById("texto").innerHTML = "Adeus!"
+      }
+    </script>
+  </a>
+</body>
+
+</html>
