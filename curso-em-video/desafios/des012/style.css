@@ -1,9 +1,22 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion one', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 
 * {
     margin: 0px;
     padding: 0px;
+}
 
+html,
+body {
+    min-width: 100dvh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -12,12 +25,41 @@ header {
     margin: auto;
     padding: 40px;
     text-align: center;
+    font-family: var(--fonte2);
+}
+
+header>h1 {
+    font-variant: small-caps;
+    font-size: 6vw;
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.25s;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
 }
 
 main p {
+    padding-left: 30px;
     white-space: pre;
     line-height: 2em;
     font-family: cursive;
+}
+
+section {
+    padding-top: 10dvh;
+    padding-bottom: 10dvh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
 }
 
 section#paragrafo1 {
@@ -25,37 +67,41 @@ section#paragrafo1 {
 }
 
 section#paragrafo2 {
-    background: white url('imagens/background001.jpg') center center no-repeat fixed;
+    background: black url('imagens/background001.jpg') center center no-repeat fixed;
     background-size: cover;
-    padding: 50px;
 }
 
 section#paragrafo2>p {
     width: fit-content;
+    padding-right: 50px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-right: 20px;
+}
+
+section#paragrafo3 {
+    box-shadow: 0px 10px 10px black;
 }
 
 section#paragrafo4 {
-    background: white url('imagens/background002.jpg') center center no-repeat fixed;
+    background: black url('imagens/background002.jpg') center center no-repeat fixed;
     background-size: cover;
-    padding: 50px;
 }
 
 section#paragrafo4>p {
     width: fit-content;
     color: white;
+    padding-right: 50px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-right: 20px;
 }
 
-
-
+section#paragrafo5 {
+    box-shadow: 0px 10px 10px black;
+}
 
 footer {
     background-color: black;
     margin: auto;
+    padding: 10px;
     text-align: center;
     color: white;
 }
